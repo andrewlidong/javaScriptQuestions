@@ -13,5 +13,4 @@ function fuzzBizz(max) {
   }
 
   return result;
-
 }
