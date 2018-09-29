@@ -2,9 +2,10 @@
 // You can assume that t will not have repetitive characters.
 // For s = "weather" and t = "therapw" the output should be sortByString(s,t) = "theraw".  For s = "weaether" and t = "odg", the output should be sortByString(s, t) = "oodg"
 
-let order = findOrder(t);
 
 function sortByStrings(s,t) {
+  let order = findOrder(t);
+
   return qSort(s, comparator);
 }
 
