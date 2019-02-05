@@ -1,36 +1,11 @@
-# Abbreviate
+# Array Range
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
-
+Write a function that takes in min, max and step as integer parameters and returns an array containing all numbers between the min and max at step intervals.  
 
 Example 1:
 
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
-```
-
-Example 2:
-
-```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
-
-Example 3:
-
+```js
+arrayRange(0, 12, 2) => [ 0, 2, 4, 6, 8, 10, 12 ]
+arrayRange(2, 5, 1) => [ 2, 3, 4, 5 ]
+arrayRange(100, 20, 3) => []
 '''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.
