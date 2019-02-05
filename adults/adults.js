@@ -10,7 +10,7 @@
 //   {name: 'Jane', age: 18},
 //   {name: 'Bob', age: 7}
 // ];
-//
+
 // adults(ppl); // => [ 'John', 'Jane' ]
 
 function adults(people) {

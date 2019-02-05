@@ -1,36 +1,19 @@
-# Abbreviate
+# logEach, capitalizeWords, maxValue
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
+Write a function  logEach that prints every element of the array and its index to the console.  Write a function capWords that takes in an array of words and returns a new array where every word is capitalized.  Write a function maxValue that returns the largest value in 'array'.  Assume 'array' is an array of numbers.  
 
+Example:
 
-Example 1:
+```js
+logEach(["Anthony", "John", "Carson"]); // prints
+0: Anthony
+1: John
+2: Carson
+];
 
+capWords(['hello', 'boOtCaMp', 'PREP!']); // => ['HELLO', 'BOOTCAMP', 'PREP!']
+
+maxValue([12, 6, 43, 2]); // => 43
+maxValue([]); // => null
+maxValue
 ```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
-```
-
-Example 2:
-
-```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
-
-Example 3:
-
-'''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.

@@ -1,31 +1,17 @@
-# Abbreviate
+# Array Builder
 
 ```js
-const removeVowels = word => {
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    let newWord = '';
+const arrayBuilder = obj => {
+    const result = [];
 
-    for (let i = 0; i < word.length; i++) {
-        if (!vowels.includes(word[i])) {
-            newWord += word[i];
+    for (let ke in obj) {
+        let end = obj[key];
+
+        for (let i = 1; i <= end; i++) {
+            result.push(key);
         }
     }
 
-    return newWord;
-}
-
-const abbreviate = sentence => {
-    sentence = sentence.split(' ');
-    let result = []
-
-    for (let i = 0; i < sentence.length; i++) {
-        if (sentence[i].length <= 4) {
-            result.push(sentence[i]);
-        } else {
-            result.push(removeVowels(sentence[i]));
-        }
-    }
-
-    return result.join(' ');
+    return result;
 }
 ```
