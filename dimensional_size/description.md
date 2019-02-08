@@ -1,36 +1,26 @@
-# Abbreviate
+# Two Dimensional Size
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
-
+Write a function that takes in a 2-D array as an argument.  The function should return the total number of elements in the 2-D array.  
 
 Example 1:
 
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
+```js
+var arr1 = [
+  [1, 2, 3],
+  [4, 5],
+  [6, 7, 8, 9]
+];
+
+twoDimensionalSize(arr1); // => 9
 ```
 
 Example 2:
 
+```js
+var arr2 = [
+  ['a'],
+  ['b', 'c', 'd', 'e']
+];
+
+twoDimensionalSize(arr2); // => 5
 ```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
-
-Example 3:
-
-'''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.

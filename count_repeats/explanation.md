@@ -2,9 +2,7 @@
 
 ### High level idea
 
-Build a helper function removeVowels which takes in a word and loops through the word, replacing any word that isn't a vowel.  
-
-With abbreviate, take a sentence and split it on " ".  Instantiate a results array.  Iterate through words and if any word has length less than or equal to 4, push it immediately into the sentence.  Otherwise, push the word with removeVowels invoked onto it.  
+Instantiate a hash (such that each key is unique), and a counter.  Iterate through the string and insert each unique letter into the set.   Add the count of letters appearing.  Then iterate through the keys and increment count for each key whose value is greater than 1.  
 
 ### Time and space complexity
 
@@ -16,6 +14,3 @@ Worst cases: <br>
 
 - Time: `O(n)` <br>
 - Space: `O(n)`
-
-### Edge cases missed
-

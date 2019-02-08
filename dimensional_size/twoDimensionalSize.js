@@ -15,7 +15,7 @@
 //   ['a'],
 //   ['b', 'c', 'd', 'e']
 // ];
-//
+
 // twoDimensionalSize(arr2); // => 5
 
 function twoDimensionalSize(array) {

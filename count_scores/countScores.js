@@ -10,7 +10,7 @@
 //             {name: "Fred", score : 10},
 //             {name: "Anthony", score: -8},
 //             {name: "Winnie", score: 12}];
-//
+
 // var countPpl = countScores(ppl);
 // countPpl; //=> { Anthony: 2, Fred: 10, Winnie: 12 }
 //
@@ -25,7 +25,7 @@
 //   {name: "Anthony", score: 2},
 //   {name: "Winnie", score: 2}
 // ];
-// countScores(peeps); //=> { Anthony: 4, Fred: 4, Winnie: 6 }
+// countScores(peeps); //=> { Anthony: 4, Fred: 4, Winnie: 6 }2
 
 function countScores(people) {
   let obj = {};

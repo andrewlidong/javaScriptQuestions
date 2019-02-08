@@ -1,31 +1,22 @@
-# Abbreviate
+# Change Possibilities
 
 ```js
-const removeVowels = word => {
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    let newWord = '';
-
-    for (let i = 0; i < word.length; i++) {
-        if (!vowels.includes(word[i])) {
-            newWord += word[i];
-        }
+const changePossibilities = (amount, denominations) {
+    if (amount === 0) {
+        return 1;
     }
 
-    return newWord;
-}
-
-const abbreviate = sentence => {
-    sentence = sentence.split(' ');
-    let result = []
-
-    for (let i = 0; i < sentence.length; i++) {
-        if (sentence[i].length <= 4) {
-            result.push(sentence[i]);
-        } else {
-            result.push(removeVowels(sentence[i]));
-        }
+    if (amount < 0 || denominations.length === 0) {
+        return 0;
     }
 
-    return result.join(' ');
+    for (let i = 0; i < denominations.length; i++) {
+        const denomination = denominations[i];
+        const subAmount = amount - denomination;
+        const subDenominations = denominations.slice(i);
+        possibilities += changePossibilities(subAmount, subDenominations);
+    }
+
+    return possibilities;
 }
 ```

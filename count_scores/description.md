@@ -1,36 +1,29 @@
-# Abbreviate
+# Count Scores
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
-
+Write a function that takes in an array of score objects (people) as its input.  A score object has two key-value pairs: a name (string) and a score (number).  Your function should return an object that has key-value pairs where each name is a key and the value is their total score.  
 
 Example 1:
 
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
+```js
+var ppl = [ {name: "Anthony", score: 10},
+            {name: "Fred", score : 10},
+            {name: "Anthony", score: -8},
+            {name: "Winnie", score: 12}];
+
+var countPpl = countScores(ppl);
+countPpl; //=> { Anthony: 2, Fred: 10, Winnie: 12 }
 ```
 
 Example 2:
 
-```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
-
-Example 3:
-
-'''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.
+```js
+var peeps = [
+  {name: "Anthony", score: 2},
+  {name: "Winnie", score: 2},
+  {name: "Fred", score: 2},
+  {name: "Winnie", score: 2},
+  {name: "Fred", score: 2},
+  {name: "Anthony", score: 2},
+  {name: "Winnie", score: 2}
+];
+countScores(peeps); //=> { Anthony: 4, Fred: 4, Winnie: 6 }```

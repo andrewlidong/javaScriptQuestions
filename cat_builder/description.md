@@ -1,36 +1,13 @@
-# Abbreviate
+# Cat Builder
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
+Write a function that returns a cat object with the corresponding properties.  
 
+Example:
 
-Example 1:
+```js
+var cat1 = catBuilder('Whiskers', 'black', ['scratching-post', 'yarn']);
+cat1; // => { name: 'Whiskers', color: 'black', toys: ['scratching-post', 'yarn'] }
 
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
-```
-
-Example 2:
-
-```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
-
-Example 3:
-
+var cat2 = catBuilder('Nyan', 'rainbow', ['poptarts']);
+cat2; // => { name: 'Nyan', color: 'rainbow', toys: [ 'poptarts' ] }
 '''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.

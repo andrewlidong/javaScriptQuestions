@@ -1,21 +1,17 @@
-# Abbreviate
+# Change Possibilities
 
 ### High level idea
 
-Build a helper function removeVowels which takes in a word and loops through the word, replacing any word that isn't a vowel.  
+If the amount = 0, return 1.  If it's less than 0 or if there are no denominations, return 0.  Otherwise, iterate through denominations, calculate the difference between the amount and denomination, and calculate the number of possible denominations.  Finally, recursively invoke changePossibilities and add it to possibilities counter.  
 
-With abbreviate, take a sentence and split it on " ".  Instantiate a results array.  Iterate through words and if any word has length less than or equal to 4, push it immediately into the sentence.  Otherwise, push the word with removeVowels invoked onto it.  
 
 ### Time and space complexity
 
 Let: <br>
 
-- `n` be the size of the input array <br>
+- `n` be the size of the denominations array <br>
 
 Worst cases: <br>
 
-- Time: `O(n)` <br>
-- Space: `O(n)`
-
-### Edge cases missed
-
+- Time: `O(n^2)` <br>
+- Space: `O(1)`

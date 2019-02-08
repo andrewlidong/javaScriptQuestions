@@ -1,31 +1,21 @@
-# Abbreviate
+# Count Scores
 
 ```js
-const removeVowels = word => {
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    let newWord = '';
+const countScores(people) {
+    const returnObj = {};
 
-    for (let i = 0; i < word.length; i++) {
-        if (!vowels.includes(word[i])) {
-            newWord += word[i];
-        }
-    }
+    for (let i = 0; i < people.length; i++) {
+        let tempPerson = people[i];
+        let name = tempPerson.name;
+        let score = tempPerson.score;
 
-    return newWord;
-}
-
-const abbreviate = sentence => {
-    sentence = sentence.split(' ');
-    let result = []
-
-    for (let i = 0; i < sentence.length; i++) {
-        if (sentence[i].length <= 4) {
-            result.push(sentence[i]);
+        if (!returnObj[name]) {
+            returnObj[name] = score;
         } else {
-            result.push(removeVowels(sentence[i]));
+            returnObj[name] += score;
         }
     }
 
-    return result.join(' ');
+    return returnObj;
 }
 ```

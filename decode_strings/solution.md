@@ -1,31 +1,33 @@
-# Abbreviate
+# Decode String
 
 ```js
-const removeVowels = word => {
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    let newWord = '';
+const decode_string = str {
+    const decoded = '';
+    const stack = [];
 
-    for (let i = 0; i < word.length; i++) {
-        if (!vowels.includes(word[i])) {
-            newWord += word[i];
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === ']') {
+            while (stack[stack.length - 1] !== '[' && stack.length !== 0) {
+                decoded = stack.pop() + decoded;
+            }
+            stack.pop();
+
+            let repeats = Number(stack.pop());
+            let decodedSoFar = decoded.slice();
+
+            while (repeats > 1) {
+                decoded += decodedSoFar;
+                repeats --;
+            }
+
+            if (stack.length === 0) {
+                break;
+            } else {
+                stack.push(str[i]);
+            }
         }
     }
 
-    return newWord;
-}
-
-const abbreviate = sentence => {
-    sentence = sentence.split(' ');
-    let result = []
-
-    for (let i = 0; i < sentence.length; i++) {
-        if (sentence[i].length <= 4) {
-            result.push(sentence[i]);
-        } else {
-            result.push(removeVowels(sentence[i]));
-        }
-    }
-
-    return result.join(' ');
+    return decoded;
 }
 ```

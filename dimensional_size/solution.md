@@ -1,4 +1,4 @@
-# Abbreviate
+# Two Dimensional Size
 
 ```js
 const removeVowels = word => {

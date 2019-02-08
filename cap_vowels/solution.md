@@ -1,4 +1,4 @@
-# Abbreviate
+# Capitalize Vowels
 
 ```js
 const capVowels = string => {

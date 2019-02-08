@@ -1,10 +1,8 @@
-# Abbreviate
+# Count Scores
 
 ### High level idea
 
-Build a helper function removeVowels which takes in a word and loops through the word, replacing any word that isn't a vowel.  
-
-With abbreviate, take a sentence and split it on " ".  Instantiate a results array.  Iterate through words and if any word has length less than or equal to 4, push it immediately into the sentence.  Otherwise, push the word with removeVowels invoked onto it.  
+Instantiate a return object.  Iterate through current array of people objects, and if the person's name is not in our returnObj, add their score, otherwise (taking advantage of unique keys) add the score to the returnObj's score.   
 
 ### Time and space complexity
 
@@ -16,6 +14,3 @@ Worst cases: <br>
 
 - Time: `O(n)` <br>
 - Space: `O(n)`
-
-### Edge cases missed
-

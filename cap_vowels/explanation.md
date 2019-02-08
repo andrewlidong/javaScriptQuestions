@@ -1,4 +1,4 @@
-# Abbreviate
+# Capitalize Vowels
 
 ### High level idea
 
@@ -13,7 +13,7 @@ Let: <br>
 Worst cases: <br>
 
 - Time: `O(n)` <br>
-- Space: `O(n)`
+- Space: `O(1)`
 
 ### Edge cases missed
 

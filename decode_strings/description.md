@@ -1,36 +1,14 @@
-# Abbreviate
+# Decode String
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
+Given an encoded string, return its corresponding decoded string.  
 
+The encoding rule is k[encoded_string], where the encoded_string inside the square brackets is repeated exactly k times.  
 
-Example 1:
+Example:
 
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
-```
-
-Example 2:
-
-```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
-
-Example 3:
-
-'''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
+For s = "4[ab]", the output should be decodeString(s) = "abababab"
+For s = "2[b3[a]]", the output should be decodeString(s) = "baaabaaa"
 
 Note:
 
-All given inputs are in lowercase letters `a-z`.
+k is guaranteed to be a positive integer.  
