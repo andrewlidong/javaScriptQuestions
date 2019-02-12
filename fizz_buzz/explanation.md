@@ -1,21 +1,5 @@
-# Abbreviate
+# Fizz Buzz
 
 ### High level idea
 
-Build a helper function removeVowels which takes in a word and loops through the word, replacing any word that isn't a vowel.  
-
-With abbreviate, take a sentence and split it on " ".  Instantiate a results array.  Iterate through words and if any word has length less than or equal to 4, push it immediately into the sentence.  Otherwise, push the word with removeVowels invoked onto it.  
-
-### Time and space complexity
-
-Let: <br>
-
-- `n` be the size of the input array <br>
-
-Worst cases: <br>
-
-- Time: `O(n)` <br>
-- Space: `O(n)`
-
-### Edge cases missed
-
+Initialize a result array, iterate from 2 to the number by 1, adding our iterator if it is divisible by 2 and not 7 or divisible by 7 and not 2.  

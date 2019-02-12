@@ -1,36 +1,15 @@
-# Abbreviate
+# Fizz Buzz
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
-
+Write a function that returns an array of numbers under the max, where each number is divisible by either 2 or 7 but not both. 
 
 Example 1:
 
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
+```js
+fuzzBizz(17) => [ 2, 4, 6, 7, 8, 10, 12, 16 ]
 ```
 
 Example 2:
 
+```js
+fuzzBizz(30) => [ 2, 4, 6, 7, 8, 10, 12, 16, 18, 20, 21, 22, 24, 26 ]
 ```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
-
-Example 3:
-
-'''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.
