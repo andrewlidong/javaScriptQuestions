@@ -1,0 +1,2 @@
+# javaScriptQuestions
+Practice JavaScript Questions
