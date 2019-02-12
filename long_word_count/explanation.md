@@ -1,21 +1,16 @@
-# Abbreviate
+# Long Word Count
 
 ### High level idea
 
-Build a helper function removeVowels which takes in a word and loops through the word, replacing any word that isn't a vowel.  
-
-With abbreviate, take a sentence and split it on " ".  Instantiate a results array.  Iterate through words and if any word has length less than or equal to 4, push it immediately into the sentence.  Otherwise, push the word with removeVowels invoked onto it.  
+Keep a counter variable.  Split the string into an array of words.  Iterate through the array, incrementing count if the current word has length greater than 7.  Return count.  
 
 ### Time and space complexity
 
 Let: <br>
 
-- `n` be the size of the input array <br>
+- `n` be the size of the input string <br>
 
 Worst cases: <br>
 
 - Time: `O(n)` <br>
-- Space: `O(n)`
-
-### Edge cases missed
-
+- Space: `O(1)`

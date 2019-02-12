@@ -4,7 +4,11 @@ Write a function longWordCount(str) that takes in a string and returns the numbe
 
 Examples:
 
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
+```js
+longWordCount(""); // => 0
+longWordCount("short words only"); // => 0
+longWordCount("one reallylong word"); // => 1
+longWordCount("two reallylong words inthisstring"); // => 2
+longWordCount("allwordword longwordword wordswordword"); // => 3
+longWordCount("seventy schfifty five"); // => 1
 ```
