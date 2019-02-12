@@ -1,36 +1,15 @@
-# Abbreviate
+# Every Other Word
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
-
+Write a function that takes in a sentence and returns an array containing every other word in that sentence.  
 
 Example 1:
 
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
+```js
+everyOtherWord('hello how are you doing on this lovely day?'); // => [ 'hello', 'are', 'doing', 'this', 'day?' ]
 ```
 
 Example 2:
 
+```js
+everyOtherWord('the weather is wonderful'); // => [ 'the', 'is' ]
 ```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
-
-Example 3:
-
-'''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.

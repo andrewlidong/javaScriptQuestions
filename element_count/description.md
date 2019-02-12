@@ -1,36 +1,16 @@
-# Abbreviate
+# Element Count
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
-
+Write a function that returns an object with each key corresponding to how many times that element appears in the array.  
 
 Example 1:
 
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
+```js
+elementCount(["a", "a", "b", "b"]); //=> { "a" : 2, "b" : 2 }
 ```
 
 Example 2:
 
-```
-Input: ("programming is fantastic")
+```js
+elementCount(['c', 'a', 'c', 'a', 'b']); // => { "c": 2, "a": 2, "b": 1 }
 Output: ("prgrmmng is fntstc")
 ```
-
-Example 3:
-
-'''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.

@@ -1,31 +1,17 @@
-# Abbreviate
+# Divisible by Three Pair Sum
 
 ```js
-const removeVowels = word => {
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    let newWord = '';
+const divisibleByThreePairSum(arr) {
+    const result = [];
 
-    for (let i = 0; i < word.length; i++) {
-        if (!vowels.includes(word[i])) {
-            newWord += word[i];
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = 0; j < arr.length; j++) {
+            if ((arr[i] + arr[j]) % 3 === 0) {
+                result.push([i, j]);
+            }
         }
     }
 
-    return newWord;
-}
-
-const abbreviate = sentence => {
-    sentence = sentence.split(' ');
-    let result = []
-
-    for (let i = 0; i < sentence.length; i++) {
-        if (sentence[i].length <= 4) {
-            result.push(sentence[i]);
-        } else {
-            result.push(removeVowels(sentence[i]));
-        }
-    }
-
-    return result.join(' ');
+    return result;
 }
 ```

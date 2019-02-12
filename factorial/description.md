@@ -1,36 +1,27 @@
-# Abbreviate
+# Factorial
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
-
+Write a function that returns the factorial of the number 'n'.  For example, the factorial of 4 is '4 * 3 * 2 * 1 = 24'
 
 Example 1:
 
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
+```js
+factorial(1); // => 1
 ```
 
 Example 2:
 
-```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
+```js
+factorial(4); // => 24
 ```
 
 Example 3:
 
-'''
-Input: ("hello world")
-Output: ("hll wrld")
+'''js
+factorial(5); // => 120
 '''
 
 Example 4:
 
+'''js
+factorial(10); // => 3628800
 '''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.

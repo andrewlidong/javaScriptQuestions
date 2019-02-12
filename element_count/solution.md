@@ -1,31 +1,18 @@
-# Abbreviate
+# Element Count
 
 ```js
-const removeVowels = word => {
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    let newWord = '';
+function elementCount(arr) {
+    let obj = {};
 
-    for (let i = 0; i < word.length; i++) {
-        if (!vowels.includes(word[i])) {
-            newWord += word[i];
-        }
-    }
-
-    return newWord;
-}
-
-const abbreviate = sentence => {
-    sentence = sentence.split(' ');
-    let result = []
-
-    for (let i = 0; i < sentence.length; i++) {
-        if (sentence[i].length <= 4) {
-            result.push(sentence[i]);
+    for (let i = 0; i < arr.length; i++) {
+        let el = arr[i];
+        if (!obj[el]) {
+            obj[el] = 1;
         } else {
-            result.push(removeVowels(sentence[i]));
+            obj[el] += 1;
         }
     }
 
-    return result.join(' ');
+    return obj;
 }
 ```

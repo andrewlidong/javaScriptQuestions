@@ -1,36 +1,10 @@
-# Abbreviate
+# Divisible by Three Pair Sum
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
+Write a function that takes an array of numbers and returns an array of all the pairs of indices whose elements sum to a multiple of three.  
 
+Example:
 
-Example 1:
-
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
-```
-
-Example 2:
-
-```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
-
-Example 3:
-
-'''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.
+```js
+divisibleByThreePairSum([1, 6, 3, 4, 2, 0]); //=> [[0, 4], [1, 2], [1, 5], [2, 5], [3, 4]]
+divisibleByThreePairSum([8, 3, 5, 9, 2]); //=> [[1, 3]]
+``'

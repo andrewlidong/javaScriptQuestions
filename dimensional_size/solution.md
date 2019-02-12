@@ -1,31 +1,13 @@
 # Two Dimensional Size
 
 ```js
-const removeVowels = word => {
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    let newWord = '';
-
-    for (let i = 0; i < word.length; i++) {
-        if (!vowels.includes(word[i])) {
-            newWord += word[i];
-        }
+const twoDimensionalSize(arr) {
+    let count = 0;
+    
+    for (let i = 0; i < arr.length; i++) {
+        count += arr[i].length;
     }
 
-    return newWord;
-}
-
-const abbreviate = sentence => {
-    sentence = sentence.split(' ');
-    let result = []
-
-    for (let i = 0; i < sentence.length; i++) {
-        if (sentence[i].length <= 4) {
-            result.push(sentence[i]);
-        } else {
-            result.push(removeVowels(sentence[i]));
-        }
-    }
-
-    return result.join(' ');
+    return count;
 }
 ```

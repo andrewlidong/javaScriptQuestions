@@ -1,36 +1,21 @@
-# Abbreviate
+# Even Range
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
-
+Write a function that returns an array containing all even numbers between start and end in sequential order.  
 
 Example 1:
 
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
+```js
+evenRange(13, 20) => [ 14, 16, 18, 20 ]
 ```
 
 Example 2:
 
-```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
+```js
+evenRange(4, 11) => [ 4, 6, 8, 10 ]
 ```
 
 Example 3:
 
+'''js
+evenRange(8, 5) => []
 '''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.

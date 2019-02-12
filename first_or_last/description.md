@@ -1,36 +1,18 @@
-# Abbreviate
+# First or Last
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
-
+Write a function that takes in an array and returns either:
+    - the first element if there is an even number of elements in the array
+    - the last element if there are an odd number of elements in the array
+    - you can assume the array contains at least one element. 
 
 Example 1:
 
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
+```js
+firstOrLast(['a', 'b', 'c', 'd']) => 'a'
 ```
 
 Example 2:
 
+```js
+firstOrLast(['Jenny', 'Mary', 'Mark']) => 'Mark'
 ```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
-
-Example 3:
-
-'''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.

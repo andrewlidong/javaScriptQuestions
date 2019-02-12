@@ -1,36 +1,10 @@
-# Abbreviate
+# First Last Capitalize
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
+Write a function that takes in a sentence and returns a new sentence where the first and last letters of each word is uppercase.  All other characters should be lowercase.  
 
+Examples:
 
-Example 1:
-
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
-```
-
-Example 2:
-
-```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
-
-Example 3:
-
+```js
+firstLastCap('hello BOOTCAMP PrEp'); // =>'HellO BootcamP PreP'
+firstLastCap('what is on the radio'); // =>'WhaT IS ON ThE RadiO'
 '''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.

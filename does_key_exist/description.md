@@ -1,36 +1,11 @@
-# Abbreviate
+# Does Key Exist
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
+Write a function that takes in an object and a key and returns true if the key is inside the object and false if the key is not inside the object.  
 
+Examples:
 
-Example 1:
-
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
-```
-
-Example 2:
-
-```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
-
-Example 3:
-
+```js
+var obj1 = {bootcamp: 'App Academy', course: 'Bootcamp Prep'}
+doesKeyExist(obj1, 'course'); // => true
+doesKeyExist(obj1, 'name'); // => false
 '''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.
