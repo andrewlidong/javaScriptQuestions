@@ -1,36 +1,15 @@
-# Abbreviate
+# Is Square
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
+Write a function isSquare(num) that takes in a number and returns true if the number is a perfect square, false otherwise.  A perfect square is a number that is the result of squaring another number.  For example, 3 * 3 is 9, so 9 is a perfect square.  
 
+Examples:
 
-Example 1:
-
+```js
+isSquare(7) => false
+isSquare(15) => false
+isSquare(18) => false
+isSquare(25) => true
+isSquare(36) => true
+isSquare(9) => true
+isSquare(16) => true
 ```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
-```
-
-Example 2:
-
-```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
-
-Example 3:
-
-'''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.

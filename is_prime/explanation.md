@@ -1,10 +1,8 @@
-# Abbreviate
+# Is Prime
 
 ### High level idea
 
-Build a helper function removeVowels which takes in a word and loops through the word, replacing any word that isn't a vowel.  
-
-With abbreviate, take a sentence and split it on " ".  Instantiate a results array.  Iterate through words and if any word has length less than or equal to 4, push it immediately into the sentence.  Otherwise, push the word with removeVowels invoked onto it.  
+If the number is less than 2, immediately return false.  Iterate from position 2 to the number, incrementing by 1.  If the number divided by iterator is zero, immediately return false.  If we pass all our checks, return true.  
 
 ### Time and space complexity
 
@@ -15,7 +13,7 @@ Let: <br>
 Worst cases: <br>
 
 - Time: `O(n)` <br>
-- Space: `O(n)`
+- Space: `O(1)`
 
 ### Edge cases missed
 

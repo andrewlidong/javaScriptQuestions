@@ -1,36 +1,12 @@
-# Abbreviate
+# Is Prime
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
+Write a function isPrime(num) that reeturns a boolean indicating if 'num' is prime or not.  
 
+Examples:
 
-Example 1:
-
+```js
+isPrime(-7); // => false
+isPrime(2); // => true
+isPrime(11); // => true
+isPrime(15); // => false
 ```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
-```
-
-Example 2:
-
-```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
-
-Example 3:
-
-'''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.
