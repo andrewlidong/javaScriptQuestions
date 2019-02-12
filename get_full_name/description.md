@@ -1,36 +1,17 @@
-# Abbreviate
+# Get Full Name
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
-
+Write a function that takes in a person object and returns a string containing their full name.  
 
 Example 1:
 
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
+```js
+var p1 = {firstName: 'John', lastName: 'Doe'};
+getFullName(p1); // => 'John Doe'
 ```
 
 Example 2:
 
+```js
+var p2 = {firstName: 'Charlie', lastName: 'Brown', age: 9};
+getFullName(p2); // => 'Charlie Brown'
 ```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
-
-Example 3:
-
-'''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.

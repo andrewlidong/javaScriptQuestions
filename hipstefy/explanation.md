@@ -1,10 +1,8 @@
-# Abbreviate
+# Hipsterfy
 
 ### High level idea
 
-Build a helper function removeVowels which takes in a word and loops through the word, replacing any word that isn't a vowel.  
-
-With abbreviate, take a sentence and split it on " ".  Instantiate a results array.  Iterate through words and if any word has length less than or equal to 4, push it immediately into the sentence.  Otherwise, push the word with removeVowels invoked onto it.  
+Initialize vowels as an array of aeiou.  Break up the sentence into an array of words.  Initialize a results array.  Iterate through our split sentence and define a temporary word as a reversed array of characters.  Initialize a count and a temp array.  Iterate through our word characters and if count is 0 and the character is a vowel, skip the character and increment count.  Otherwise push the character.  Reverse temp and join the characters together.  Finally push temp into result.  Return the joined result.  
 
 ### Time and space complexity
 

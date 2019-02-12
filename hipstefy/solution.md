@@ -1,31 +1,29 @@
-# Abbreviate
+# Hipstefy
 
 ```js
-const removeVowels = word => {
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    let newWord = '';
+const hipsterfy = sentence => {
+  const vowels = "aeiou".split("");
+  const sentenceArr = sentence.split(" ");
+  const results = [];
 
-    for (let i = 0; i < word.length; i++) {
-        if (!vowels.includes(word[i])) {
-            newWord += word[i];
-        }
+  for (let i = 0; i < sentenceArr.length; i++) {
+    let temp = sentenceArr[i].split("").reverse();
+    let count = 0;
+    let tempArr = [];
+
+    for (let j = 0; j < temp.length; j++) {
+      if (vowels.includes(temp[j] && count === 0)) {
+        count ++;
+        continue;
+      }
+      else {
+        tempArr.push(temp[j]);
+      }
     }
+    temp = tempArr.reverse().join("");
+    results.push(temp);
+  }
+  return results.join(" ");
 
-    return newWord;
-}
-
-const abbreviate = sentence => {
-    sentence = sentence.split(' ');
-    let result = []
-
-    for (let i = 0; i < sentence.length; i++) {
-        if (sentence[i].length <= 4) {
-            result.push(sentence[i]);
-        } else {
-            result.push(removeVowels(sentence[i]));
-        }
-    }
-
-    return result.join(' ');
 }
 ```

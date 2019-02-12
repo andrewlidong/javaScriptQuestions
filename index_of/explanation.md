@@ -1,10 +1,8 @@
-# Abbreviate
+# Is Inside
 
 ### High level idea
 
-Build a helper function removeVowels which takes in a word and loops through the word, replacing any word that isn't a vowel.  
-
-With abbreviate, take a sentence and split it on " ".  Instantiate a results array.  Iterate through words and if any word has length less than or equal to 4, push it immediately into the sentence.  Otherwise, push the word with removeVowels invoked onto it.  
+In javaScript, indexOf returns the position of the first occurrence of a specified value in a string.  It returns -1 if the value to search for never occurs.  Simply check if the indexOf(el) is greater than -1 and if it is, return true.  Otherwise return false.  
 
 ### Time and space complexity
 
@@ -15,7 +13,4 @@ Let: <br>
 Worst cases: <br>
 
 - Time: `O(n)` <br>
-- Space: `O(n)`
-
-### Edge cases missed
-
+- Space: `O(1)`

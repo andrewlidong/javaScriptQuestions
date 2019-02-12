@@ -1,36 +1,19 @@
-# Abbreviate
+# Is Inside
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
-
+Write a function isInside(array, el) that returns true if el is an element inside of the 'array', false otherwise.  
 
 Example 1:
 
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
+```js
+isInside(['chase', 'phi', 'eliot'], 'eliot'); // => true
 ```
 
 Example 2:
 
+```js
+isInside(['chase', 'phi', 'eliot'], 'fred'); // => false
 ```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
 
-Example 3:
+Hint:
 
-'''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.
+Use indexOf
