@@ -1,19 +1,16 @@
-# 
+# Odd Range
 
 ### High level idea
 
-First,
+First, initialize an odds array.  Iterate through until the end all odd values, pushing in the iterator.  
 
 ### Time and space complexity
 
 Let: <br>
 
-- `n` be <br>
+- `n` be the end <br>
 
 Worst cases: <br>
 
-- Time: `O()` <br>
-- Space: `O()`
-
-### Edge cases missed
-
+- Time: `O(n/2)` <br>
+- Space: `O(n/2)`

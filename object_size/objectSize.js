@@ -3,20 +3,20 @@
 //
 // Examples:
 //
-// var obj1 = {
-//   name: 'Fido',
-//   age: '4'
-// }
-//
-// objectSize(obj1); // => 2
-//
-// var obj2 = {
-//   name: 'App Academy',
-//   course: 'Bootcamp Prep',
-//   locations: ['SF', 'NY']
-// }
-//
-// objectSize(obj2); // => 3
+var obj1 = {
+  name: 'Fido',
+  age: '4'
+}
+
+objectSize(obj1); // => 2
+
+var obj2 = {
+  name: 'App Academy',
+  course: 'Bootcamp Prep',
+  locations: ['SF', 'NY']
+}
+
+objectSize(obj2); // => 3
 
 function objectSize(obj) {
   let count = 0;

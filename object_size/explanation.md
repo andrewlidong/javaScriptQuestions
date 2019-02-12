@@ -1,19 +1,5 @@
-# 
+# Object Size
 
 ### High level idea
 
-First,
-
-### Time and space complexity
-
-Let: <br>
-
-- `n` be <br>
-
-Worst cases: <br>
-
-- Time: `O()` <br>
-- Space: `O()`
-
-### Edge cases missed
-
+First, initialize a count.  For each key in object, increment the count.  Return the count.  
