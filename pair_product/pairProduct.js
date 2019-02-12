@@ -4,9 +4,9 @@
 // Use only `while` loops. No `for` loops.
 //
 // Examples:
-// pairProduct([1,2,3,4,5], 4); //=> [ [ 0, 3 ] ]
-// pairProduct([1,2,3,4,5], 8); //=> [ [ 1, 3 ] ]
-// pairProduct([1, 2, 3, 12, 8], 24); //=> [ [ 1, 3 ], [ 2, 4 ] ]
+pairProduct([1,2,3,4,5], 4); //=> [ [ 0, 3 ] ]
+pairProduct([1,2,3,4,5], 8); //=> [ [ 1, 3 ] ]
+pairProduct([1, 2, 3, 12, 8], 24); //=> [ [ 1, 3 ], [ 2, 4 ] ]
 
 function pairProduct(arr, num) {
   let result = [];
