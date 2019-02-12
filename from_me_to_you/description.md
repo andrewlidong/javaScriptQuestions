@@ -1,36 +1,15 @@
-# Abbreviate
+# From Me to You
 
-Write a function to find that takes in a sentence string and returns a new sentence where words longer than 4 characters have their vowels removed.  
-
+Write a function that returns a string where the word me is replaced with you.  
 
 Example 1:
 
-```
-Input: ("bootcamp prep is fun")
-Output: ("btcmp prep is fun")
-```
+'''js
+fromMeToYou('that made me laugh') => 'that made you laugh'
+'''
 
 Example 2:
 
-```
-Input: ("programming is fantastic")
-Output: ("prgrmmng is fntstc")
-```
-
-Example 3:
-
+'''js
+fromMeToYou('love me or hate me') => 'love you or hate you'
 '''
-Input: ("hello world")
-Output: ("hll wrld")
-'''
-
-Example 4:
-
-'''
-Input: ("how are you")
-Output: ("how are you")
-'''
-
-Note:
-
-All given inputs are in lowercase letters `a-z`.
